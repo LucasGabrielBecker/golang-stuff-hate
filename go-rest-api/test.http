@@ -1,0 +1,27 @@
+GET http://localhost:8080/books
+###
+
+POST http://localhost:8080/book
+Content-Type: application/json
+
+{
+  "title":"my old cock",
+  "author":"Lucas Lopes"
+}
+###
+
+
+DELETE http://localhost:8080/books/1
+###
+
+
+POST http://localhost:8080/books/upvote/1
+###
+
+
+POST http://localhost:8080/books/add-comment/1
+Content-Type: application/json
+
+{
+  "content":"lol"
+}
